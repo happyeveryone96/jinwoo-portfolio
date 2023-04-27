@@ -1,7 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import gsap, { Power4 } from "gsap";
 import Image from "next/image";
-import mainImg from "../../public/main.avif";
+import mainImg from "../../public/universe.jpg";
 
 export default function Home() {
   const logoRef = React.useRef<HTMLDivElement>(null);
@@ -72,10 +73,10 @@ export default function Home() {
     <div className="container">
       <div className="nav">
         <div ref={logoRef} className="nav-logo">
-          정진우
+          FE DEV
         </div>
         <div className="nav-links">
-          <a href="#">About Us</a>
+          <a href="#">About</a>
           <a href="#">Projects</a>
           <a href="#">Contact</a>
         </div>
@@ -83,8 +84,8 @@ export default function Home() {
       <div className="header">
         <div className="header-left col">
           <div className="item">
-            <h1>안녕하세요</h1>
-            <h1>정진우입니다!</h1>
+            <h1 className="item-medium">HI, I'M JUNG JIN WOO</h1>
+            <h2 className="item-small">HI, I'M JUNG JIN WOO</h2>
           </div>
         </div>
         <div className="header-right col">
@@ -94,15 +95,7 @@ export default function Home() {
           <div className="pattern">✦ ✦ ✦</div>
         </div>
       </div>
-      <div className="btn-container">
-        <div className="btns col">
-          <div className="btn">
-            <span>2022 Best Agency</span>
-          </div>
-          <div className="btn">
-            <span>World Class Agency</span>
-          </div>
-        </div>
+      <div className="divider-container">
         <div className="divider col">
           <div className="hr"></div>
         </div>
@@ -110,12 +103,11 @@ export default function Home() {
       <div className="hero">
         <Image src={mainImg} alt="메인 이미지" />
         <div className="hero-wrapper"></div>
-        <div className="arrow"></div>
       </div>
       <div className="marquee">
         <span>
-          discuss your ideas - unexpected time - spatial experiences - best
-          specialists - impulse - independent online store
+          JavaScript - TypeScript - HTML - CSS - SCSS - Styled-Components -
+          React.js - Redux.js - Recoil.js
         </span>
       </div>
     </div>
