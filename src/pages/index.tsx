@@ -12,10 +12,19 @@ export default function Home() {
       opacity: 0,
       ease: Power4.easeInOut,
       delay: 1,
-      duration: 2,
+      duration: 1,
       stagger: 0.3,
     });
     gsap.from("h1", 2, {
+      y: 50,
+      opacity: 0,
+      ease: "power4.inOut",
+      delay: 1.5,
+      stagger: {
+        amount: 0.3,
+      },
+    });
+    gsap.from("h2", 2, {
       y: 50,
       opacity: 0,
       ease: "power4.inOut",
@@ -61,7 +70,7 @@ export default function Home() {
       ease: "power3.inOut",
       delay: 3,
     });
-    gsap.from(".marquee", 2, {
+    gsap.from(".marquee", 1, {
       bottom: "-10rem",
       ease: "power3.inOut",
       delay: 4,
@@ -69,7 +78,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container ">
       <Nav />
       <div className="header">
         <div className="header-left col">
