@@ -456,81 +456,6 @@ textarea {
   font-family: "Neue Montreal";
 }
 
-.form-action {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.submit-btn button {
-  color: #fff;
-  font-size: 2rem;
-}
-
-.submit-btn button::after {
-  background: #fff;
-}
-
-.checkmark-wrapper {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-family: "Neue Montreal";
-}
-
-.checkmark-wrapper span {
-  margin-top: -3px;
-  font-size: 16px;
-  color: gray;
-}
-
-.checkmark-wrapper input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  border-radius: 2px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  transition: 0.05s all ease-in;
-}
-
-.checkmark-wrapper input:checked ~ .checkmark {
-  background-color: #fff;
-  transition: 0.05s all ease-in;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.checkmark-wrapper input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.checkmark-wrapper .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid #000;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  transition: 0.05s all ease-in;
-}
-
 @media (max-width: 900px) {
   .image-box {
     display: block;
@@ -575,21 +500,8 @@ textarea {
     padding: 6em 0;
   }
 
-  button {
-    width: 100%;
-    font-size: 2rem;
-  }
-
-  button::after {
-    display: none;
-  }
-
   .overlay {
     right: -100%;
-  }
-
-  .form-action {
-    margin-bottom: 130px;
   }
 }
 
