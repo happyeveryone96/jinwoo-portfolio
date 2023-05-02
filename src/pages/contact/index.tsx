@@ -2,7 +2,7 @@ import Nav from "@/components/Nav/Nav";
 import Link from "next/link";
 import React from "react";
 
-const About = () => {
+const Contact = () => {
   if (typeof document !== "undefined") {
     const d = document,
       w = "https://tally.so/widgets/embed.js";
@@ -56,4 +56,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Contact;
