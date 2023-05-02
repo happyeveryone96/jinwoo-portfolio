@@ -9,6 +9,10 @@ body {
   width: 100%;
   height: 100vh;
   background: #cabfb8;
+}
+
+.container {
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -18,6 +22,8 @@ body {
   justify-content: space-between;
   padding: 2em 1em 2em 2em;
   font-family: "Monument Extended";
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
 }
 
 .nav > * {
@@ -33,18 +39,8 @@ body {
   font-weight: 300;
 }
 
-@media (max-width: 900px) {
-  .nav {
-    justify-content: center;
-  }
-
-  .item > .item-medium {
-    display: none;
-  }
-
-  .item > .item-small {
-    display: block;
-  }
+.nav-logo a:nth-child(1) {
+  font-weight: 700;
 }
 
 .header {
@@ -187,4 +183,142 @@ body {
   100% {
     transform: translate(-100%, 0);
   }
+}
+
+.project-main-container {
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
+}
+
+.project-container {
+  position: relative;
+  z-index: 10000;
+  width: 100%;
+}
+
+.project-sub-container > * {
+  position: relative;
+  text-align: left;
+}
+
+.project-sub-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Voyage";
+  font-weight: 700;
+  font-size: 5vw;
+}
+
+p {
+  margin: 1em 0 0 0;
+  font-family: "Neue Montreal";
+  font-size: 1.8vw;
+}
+
+.responsible-function,
+.planning-the-road {
+  font-weight: 700;
+}
+
+.image-box {
+  display: flex;
+  margin-top: 30px;
+}
+
+.blob {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+  .image-box {
+    display: block;
+  }
+}
+
+.dream-1 {
+  background: url("../../public/dream1.png") no-repeat;
+  background-size: contain;
+}
+
+.dream-2 {
+  background: url("../../public/dream2.png") no-repeat;
+  background-size: contain;
+}
+
+.dream-3 {
+  background: url("../../public/dream3.png") no-repeat;
+  background-size: contain;
+}
+
+.dream-4 {
+  background: url("../../public/dream4.png") no-repeat;
+  background-size: contain;
+}
+
+.rush-1 {
+  background: url("../../public/rush1.png") no-repeat;
+  background-size: contain;
+}
+
+.rush-2 {
+  background: url("../../public/rush2.png") no-repeat;
+  background-size: contain;
+}
+
+.rush-3 {
+  background: url("../../public/rush3.png") no-repeat;
+  background-size: contain;
+}
+
+.rush-4 {
+  background: url("../../public/rush4.png") no-repeat;
+  background-size: contain;
+}
+
+.rush-5 {
+  background: url("../../public/rush5.png") no-repeat;
+  background-size: contain;
+}
+
+.discatch-1 {
+  margin-top: 30px;
+  background: url("../../public/discatch1.png") no-repeat;
+  background-size: contain;
+}
+
+.discatch-2 {
+  background: url("../../public/discatch2.png") no-repeat;
+  background-size: contain;
+}
+
+.discatch-3 {
+  background: url("../../public/discatch3.png") no-repeat;
+  background-size: contain;
+}
+
+.uzik-1 {
+  background: url("../../public/uzik1.png") no-repeat;
+  background-size: contain;
+}
+
+.uzik-2 {
+  background: url("../../public/uzik2.png") no-repeat;
+  background-size: contain;
+}
+
+.uzik-3 {
+  background: url("../../public/uzik3.png") no-repeat;
+  background-size: contain;
+}
+
+.uzik-4 {
+  background: url("../../public/uzik4.png") no-repeat;
+  background-size: contain;
 }

@@ -3,10 +3,9 @@ import React from "react";
 import gsap, { Power4 } from "gsap";
 import Image from "next/image";
 import mainImg from "../../public/universe.jpg";
+import Nav from "@/components/Nav/Nav";
 
 export default function Home() {
-  const logoRef = React.useRef<HTMLDivElement>(null);
-
   React.useLayoutEffect(() => {
     gsap.from(".nav-logo, .nav-links > a", {
       top: 30,
@@ -71,16 +70,7 @@ export default function Home() {
 
   return (
     <div className="container">
-      <div className="nav">
-        <div ref={logoRef} className="nav-logo">
-          FE DEV
-        </div>
-        <div className="nav-links">
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
-        </div>
-      </div>
+      <Nav />
       <div className="header">
         <div className="header-left col">
           <div className="item">
