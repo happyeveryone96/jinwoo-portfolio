@@ -3,7 +3,6 @@ import React from "react";
 import gsap, { Power4 } from "gsap";
 import Image from "next/image";
 import mainImg from "../../public/images/universe.jpg";
-import Nav from "@/components/Nav/Nav";
 
 export default function Home() {
   React.useEffect(() => {
