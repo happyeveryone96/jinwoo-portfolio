@@ -2,7 +2,7 @@
 import React from "react";
 import gsap, { Power4 } from "gsap";
 import Image from "next/image";
-import mainImg from "../../public/universe.jpg";
+import mainImg from "../../public/images/universe.jpg";
 import Nav from "@/components/Nav/Nav";
 
 export default function Home() {
@@ -78,7 +78,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container ">
+    <div className="container">
       <Nav />
       <div className="header">
         <div className="header-left col">

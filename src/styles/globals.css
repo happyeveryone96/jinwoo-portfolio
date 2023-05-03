@@ -23,7 +23,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 2em 1em 2em 2em;
-  font-family: "Monument Extended";
   border-bottom: 1px solid white;
   position: fixed;
   z-index: 100000;
@@ -60,8 +59,7 @@ body {
 
 .header h1 {
   position: relative;
-  font-family: "Monument Extended";
-  font-size: 100px;
+  font-size: 80px;
   text-transform: uppercase;
   line-height: 1;
   margin: 0;
@@ -104,7 +102,6 @@ body {
 }
 
 .copy p {
-  font-family: "Monument Extended";
   font-size: 10px;
   font-weight: 300;
   line-height: 1.5;
@@ -161,7 +158,6 @@ body {
 }
 
 .marquee span {
-  font-family: "Monument Extended";
   text-transform: uppercase;
   font-weight: 400;
   color: #c0b1b1;
@@ -182,7 +178,7 @@ body {
 
 .project-main-container {
   margin: 60px auto 30px;
-  width: 90%;
+  width: 100%;
 }
 
 .first-container {
@@ -201,6 +197,7 @@ body {
   position: relative;
   z-index: 10000;
   width: 100%;
+  margin-bottom: 60px;
 }
 
 .project-sub-container > * {
@@ -219,113 +216,17 @@ body {
 }
 
 h1 {
-  font-family: "Voyage";
   font-weight: 700;
   font-size: 5vw;
 }
 
 p {
   margin: 1em 0 0 0;
-  font-family: "Neue Montreal";
   font-size: 1.8vw;
 }
 
 .highlight {
   font-weight: 700;
-}
-
-.image-box {
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 100px;
-}
-
-.blob {
-  width: 400px;
-  height: 200px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.dream-1 {
-  background: url("../../public/dream1.png") no-repeat;
-  background-size: contain;
-}
-
-.dream-2 {
-  background: url("../../public/dream2.png") no-repeat;
-  background-size: contain;
-}
-
-.dream-3 {
-  background: url("../../public/dream3.png") no-repeat;
-  background-size: contain;
-}
-
-.dream-4 {
-  background: url("../../public/dream4.png") no-repeat;
-  background-size: contain;
-}
-
-.rush-1 {
-  background: url("../../public/rush1.png") no-repeat;
-  background-size: contain;
-}
-
-.rush-2 {
-  background: url("../../public/rush2.png") no-repeat;
-  background-size: contain;
-}
-
-.rush-3 {
-  background: url("../../public/rush3.png") no-repeat;
-  background-size: contain;
-}
-
-.rush-4 {
-  background: url("../../public/rush4.png") no-repeat;
-  background-size: contain;
-}
-
-.rush-5 {
-  background: url("../../public/rush5.png") no-repeat;
-  background-size: contain;
-}
-
-.discatch-1 {
-  margin-top: 30px;
-  background: url("../../public/discatch1.png") no-repeat;
-  background-size: contain;
-}
-
-.discatch-2 {
-  background: url("../../public/discatch2.png") no-repeat;
-  background-size: contain;
-}
-
-.discatch-3 {
-  background: url("../../public/discatch3.png") no-repeat;
-  background-size: contain;
-}
-
-.uzik-1 {
-  background: url("../../public/uzik1.png") no-repeat;
-  background-size: contain;
-}
-
-.uzik-2 {
-  background: url("../../public/uzik2.png") no-repeat;
-  background-size: contain;
-}
-
-.uzik-3 {
-  background: url("../../public/uzik3.png") no-repeat;
-  background-size: contain;
-}
-
-.uzik-4 {
-  background: url("../../public/uzik4.png") no-repeat;
-  background-size: contain;
 }
 
 .contact-container {
@@ -355,7 +256,6 @@ p {
 }
 
 .copy-wrapper h2 {
-  width: 200%;
   line-height: 1;
   padding: 0 0 1em 0;
 }
@@ -457,6 +357,22 @@ textarea {
   font-family: "Neue Montreal";
 }
 
+@media (max-width: 1300px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copy {
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 1000px) {
   .image-box {
     display: block;
@@ -474,22 +390,12 @@ textarea {
     width: 100%;
   }
 
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .project-sub-container {
+    width: 80%;
   }
 
   .contact {
     margin-top: 30px;
-  }
-
-  .copy {
-    justify-content: center;
-    align-items: center;
-    padding: 0 50px;
-    width: 100vw;
-    margin: 0 auto;
   }
 
   .copy-wrapper {
@@ -502,12 +408,6 @@ textarea {
     padding: 6em 0;
   }
 
-  .copy-wrapper h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 15vw;
-  }
-
   .copy-wrapper h2 {
     font-size: 4vw;
   }
@@ -517,8 +417,18 @@ textarea {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .nav {
     font-size: 10px;
+  }
+
+  .first-container {
+    margin-top: 80px;
+  }
+
+  .blob {
+    width: 100%;
+    height: 200px;
+    margin: 30px 0;
   }
 }
