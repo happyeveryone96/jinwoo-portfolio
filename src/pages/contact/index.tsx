@@ -1,21 +1,23 @@
 import Nav from "@/components/Nav/Nav";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Contact = () => {
-  if (typeof document !== "undefined") {
-    const d = document,
-      w = "https://tally.so/widgets/embed.js";
-    if (d.querySelector('script[src="' + w + '"]') == null) {
-      const s = d.createElement("script");
-      (s.src = w), d.body.appendChild(s);
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      const d = document,
+        w = "https://tally.so/widgets/embed.js";
+      if (d.querySelector('script[src="' + w + '"]') == null) {
+        const s = d.createElement("script");
+        (s.src = w), d.body.appendChild(s);
+      }
     }
-  }
+  }, []);
 
   return (
     <div>
       <Nav />
-      <div className="about-container">
+      <div className="contact-container">
         <div className="copy">
           <div className="copy-wrapper">
             <h1>FRONT-END DEVELOPER JUNG JIN WOO</h1>
@@ -41,7 +43,7 @@ const Contact = () => {
             <h2 className="contact">Contact</h2>
             <div className="form">
               <iframe
-                data-tally-src="https://tally.so/embed/mOaONM?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                src="https://tally.so/embed/mOaONM?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
                 loading="lazy"
                 width="100%"
                 height="421"

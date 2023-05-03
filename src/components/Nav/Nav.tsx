@@ -3,7 +3,7 @@ import React from "react";
 import gsap from "gsap";
 
 const Nav = () => {
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     gsap.from(".nav", 1, {
       width: "0%",
       ease: "power0.inOut",

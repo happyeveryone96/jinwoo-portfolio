@@ -328,7 +328,7 @@ p {
   background-size: contain;
 }
 
-.about-container {
+.contact-container {
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -349,14 +349,15 @@ p {
 .copy-wrapper h1 {
   font-family: "Morgenwalsh";
   text-transform: none;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1;
   padding: 0 0 1em 0;
-  font-weight: 500;
 }
 
 .copy-wrapper h2 {
-  margin: 20px 0;
+  width: 200%;
+  line-height: 1;
+  padding: 0 0 1em 0;
 }
 
 .copy-wrapper p {
@@ -456,7 +457,7 @@ textarea {
   font-family: "Neue Montreal";
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .image-box {
     display: block;
   }
@@ -473,7 +474,7 @@ textarea {
     width: 100%;
   }
 
-  .about-container {
+  .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -486,8 +487,9 @@ textarea {
   .copy {
     justify-content: center;
     align-items: center;
-    background: #b2a7a1;
-    padding: 0;
+    padding: 0 50px;
+    width: 100vw;
+    margin: 0 auto;
   }
 
   .copy-wrapper {
@@ -498,6 +500,16 @@ textarea {
     width: 100%;
     text-align: center;
     padding: 6em 0;
+  }
+
+  .copy-wrapper h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 15vw;
+  }
+
+  .copy-wrapper h2 {
+    font-size: 4vw;
   }
 
   .overlay {
