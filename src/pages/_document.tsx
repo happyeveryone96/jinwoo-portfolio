@@ -4,9 +4,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head>
-        <title>정진우 | 프론트엔드 개발자 포트폴리오</title>
-      </Head>
+      <Head />
       <body>
         <Main />
         <NextScript />
