@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import localFont from "next/font/local";
+import Nav from "@/components/Nav/Nav";
 
 const monumentExtended = localFont({
   src: [
@@ -29,6 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>정진우 | 프론트엔드 개발자 포트폴리오</title>
       </Head>
+      <Nav />
       <Component {...pageProps} />
     </div>
   );

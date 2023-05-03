@@ -17,7 +17,6 @@ const Contact = () => {
 
   return (
     <div>
-      <Nav />
       <div className={css.contact_container}>
         <div className={css.copy}>
           <div className={css.copy_wrapper}>

@@ -54,6 +54,10 @@ const StyledSlider = styled(Slider)`
       width: 60vw;
     }
   }
+
+  .slick-slide div {
+    outline: none;
+  }
 `;
 
 const CardBox = styled.div`

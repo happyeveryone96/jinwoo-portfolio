@@ -60,7 +60,6 @@ export default function Home() {
 
   return (
     <div className="container">
-      <Nav />
       <div className="header">
         <h1>HI, I'M JUNG JIN WOO</h1>
         <h2>HI, I'M JUNG JIN WOO</h2>
