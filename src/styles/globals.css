@@ -12,11 +12,6 @@ body {
   background-color: #000;
 }
 
-.container {
-  height: 100vh;
-  overflow: hidden;
-}
-
 .nav {
   width: 100%;
   top: 0;
@@ -29,15 +24,19 @@ body {
 }
 
 .nav a {
-  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0 1em;
   font-weight: 300;
 }
 
-.nav-logo a:nth-child(1) {
+.nav_logo a:nth-child(1) {
   font-weight: 700;
+}
+
+.container {
+  height: 100vh;
+  overflow: hidden;
 }
 
 .header {
@@ -69,7 +68,7 @@ body {
   display: none;
 }
 
-.play-wrapper {
+.play_wrapper {
   position: relative;
   width: 100%;
   height: 80px;
@@ -83,7 +82,7 @@ body {
   padding: 0.4em;
 }
 
-.play-btn {
+.play_btn {
   width: 70px;
   height: 70px;
   background: #000;
@@ -107,37 +106,17 @@ body {
   line-height: 1.5;
 }
 
-.divider-container {
-  width: 100%;
-  padding: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: -2em;
-}
-
-.divider {
-  width: 100%;
-}
-
-.hr {
-  width: 100%;
-  height: 1px;
-  margin: 0 auto;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.hero {
+.main {
   display: flex;
   justify-content: flex-end;
 }
 
-.hero img {
+.main img {
   height: 100px;
   height: 90%;
 }
 
-.hero-wrapper {
+.main_wrapper {
   position: absolute;
   width: 0;
   height: 120%;
@@ -176,45 +155,6 @@ body {
   }
 }
 
-.project-main-container {
-  margin: 60px auto 30px;
-  width: 100%;
-}
-
-.first-container {
-  margin-top: 130px;
-}
-
-.project-main-container:not(:last-child) {
-  border-bottom: 1px solid white;
-}
-
-.project-main-container:last-child {
-  padding-bottom: 30px;
-}
-
-.project-container {
-  position: relative;
-  z-index: 10000;
-  width: 100%;
-  margin-bottom: 60px;
-}
-
-.project-sub-container > * {
-  position: relative;
-  text-align: left;
-}
-
-.project-sub-container {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.github {
-  margin-top: 12px;
-}
-
 h1 {
   font-weight: 700;
   font-size: 5vw;
@@ -223,47 +163,6 @@ h1 {
 p {
   margin: 1em 0 0 0;
   font-size: 1.8vw;
-}
-
-.highlight {
-  font-weight: 700;
-}
-
-.contact-container {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  margin-top: 150px;
-}
-
-.copy {
-  width: 40vw;
-  padding: 2em;
-  display: flex;
-  align-items: center;
-}
-
-.copy-wrapper {
-  width: 90%;
-}
-
-.copy-wrapper h1 {
-  font-family: "Morgenwalsh";
-  text-transform: none;
-  font-size: 3rem;
-  line-height: 1;
-  padding: 0 0 1em 0;
-}
-
-.copy-wrapper h2 {
-  line-height: 1;
-  padding: 0 0 1em 0;
-}
-
-.copy-wrapper p {
-  font-family: "Neue Montreal";
-  width: 75%;
-  line-height: 1.5;
 }
 
 button {
@@ -297,87 +196,7 @@ button:hover::after {
   width: 100%;
 }
 
-.overlay {
-  width: 50vw;
-  background: #000;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay-copy {
-  width: 75%;
-}
-
-#subtitle {
-  font-family: "Wremena";
-  line-height: 2;
-}
-
-.titlebar {
-  position: relative;
-  top: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  font-family: "Formula Condensed";
-  text-transform: uppercase;
-  font-size: 3rem;
-  z-index: 0;
-}
-
-.titlebar #flag {
-  position: relative;
-  top: -0.2rem;
-  margin: 0 0.4em;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  padding: 2em 0;
-}
-
-.form input,
-textarea {
-  background: none;
-  outline: none;
-  border: none;
-  resize: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 0.8em;
-  color: #fff;
-  margin: 1em 0;
-  font-size: 1.2rem;
-}
-
-::placeholder,
-textarea {
-  font-family: "Neue Montreal";
-}
-
-@media (max-width: 1300px) {
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .copy {
-    justify-content: center;
-    align-items: center;
-    padding: 0 50px;
-    width: 100vw;
-    margin: 0 auto;
-  }
-}
-
 @media (max-width: 1000px) {
-  .image-box {
-    display: block;
-  }
-
   .header h1 {
     display: none;
   }
@@ -385,50 +204,13 @@ textarea {
   .header h2 {
     display: block;
   }
-
-  .project-main-container {
-    width: 100%;
-  }
-
-  .project-sub-container {
-    width: 80%;
-  }
-
-  .contact {
-    margin-top: 30px;
-  }
-
-  .copy-wrapper {
-    width: 100%;
-  }
-
-  .copy-wrapper p {
-    width: 100%;
-    text-align: center;
-    padding: 6em 0;
-  }
-
-  .copy-wrapper h2 {
-    font-size: 4vw;
-  }
-
-  .overlay {
-    right: -100%;
+  p {
+    font-size: 3vw;
   }
 }
 
 @media (max-width: 420px) {
   .nav {
     font-size: 10px;
-  }
-
-  .first-container {
-    margin-top: 80px;
-  }
-
-  .blob {
-    width: 100%;
-    height: 200px;
-    margin: 30px 0;
   }
 }
