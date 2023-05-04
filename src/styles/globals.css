@@ -31,8 +31,8 @@ body {
 }
 
 .container {
-  height: 100vh;
   overflow: hidden;
+  isolation: isolate;
 }
 
 .header {
@@ -90,9 +90,7 @@ body {
 
 .pattern {
   text-align: center;
-  padding: 1em 0;
   letter-spacing: 10px;
-  opacity: 0.2;
   color: gray;
 }
 
@@ -108,14 +106,13 @@ body {
 }
 
 .main img {
-  height: 100px;
-  height: 90%;
+  height: 59.7vh;
 }
 
 .main_wrapper {
   position: absolute;
   width: 0;
-  height: 120%;
+  height: 100%;
 }
 
 .marquee {
@@ -177,5 +174,8 @@ p {
 @media (max-width: 420px) {
   .nav {
     font-size: 10px;
+  }
+  .header {
+    margin-top: 50px;
   }
 }
