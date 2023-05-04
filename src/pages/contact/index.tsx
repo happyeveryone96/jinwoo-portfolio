@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav/Nav";
 import Link from "next/link";
 import React, { useEffect } from "react";
+import css from "../../styles/contact.module.css";
 
 const Contact = () => {
   useEffect(() => {
@@ -16,11 +17,13 @@ const Contact = () => {
 
   return (
     <div>
-      <Nav />
-      <div className="contact-container">
-        <div className="copy">
-          <div className="copy-wrapper">
-            <h1>FRONT-END DEVELOPER JUNG JIN WOO</h1>
+      <div className={css.contact_container}>
+        <div className={css.copy}>
+          <div className={css.copy_wrapper}>
+            <h1>
+              FRONT-END DEVELOPER <br />
+              JUNG JIN WOO
+            </h1>
             <h2>Phone. 010-5756-0347</h2>
             <h2>Email. happyeveryone@naver.com</h2>
             <h2>Address. 경기도 화성시 산척동</h2>
@@ -38,10 +41,10 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="overlay">
-          <div className="overlay-copy">
-            <h2 className="contact">Contact</h2>
-            <div className="form">
+        <div className={css.overlay}>
+          <div className={css.overlay_copy}>
+            <h2 className={css.contact}>Contact</h2>
+            <div className={css.form}>
               <iframe
                 src="https://tally.so/embed/mOaONM?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
                 loading="lazy"

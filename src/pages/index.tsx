@@ -2,12 +2,11 @@
 import React from "react";
 import gsap, { Power4 } from "gsap";
 import Image from "next/image";
-import mainImg from "../../public/universe.jpg";
-import Nav from "@/components/Nav/Nav";
+import mainImg from "../../public/images/universe.jpg";
 
 export default function Home() {
-  React.useLayoutEffect(() => {
-    gsap.from(".nav-logo, .nav-links > a", {
+  React.useEffect(() => {
+    gsap.from(".nav_logo, .nav_links > a", {
       top: 30,
       opacity: 0,
       ease: Power4.easeInOut,
@@ -33,7 +32,7 @@ export default function Home() {
         amount: 0.3,
       },
     });
-    gsap.from(".play-wrapper, .pattern, .copy", 2, {
+    gsap.from(".play_wrapper, .pattern", 2, {
       scaleY: 0,
       ease: "power3.inOut",
       stagger: {
@@ -41,32 +40,13 @@ export default function Home() {
       },
       delay: 2.5,
     });
-
-    gsap.from(".hr", 2, {
-      width: "0%",
-      ease: "power3.inOut",
-      delay: 3,
-    });
-
-    gsap.from(".btns", 2, {
-      x: 50,
-      opacity: 0,
-      ease: "power3.inOut",
-      delay: 3,
-    });
-
-    gsap.from(".play-btn", 2, {
+    gsap.from(".play_btn", 2, {
       scale: 0,
       ease: "power3.inOut",
       delay: 3,
     });
-    gsap.from(".hero-wrapper", 2, {
+    gsap.from(".main_wrapper", 2, {
       width: "100%",
-      ease: "power3.inOut",
-      delay: 3,
-    });
-    gsap.from(".arrow", 2, {
-      scale: 0,
       ease: "power3.inOut",
       delay: 3,
     });
@@ -78,30 +58,20 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container ">
-      <Nav />
+    <div className="container">
       <div className="header">
-        <div className="header-left col">
-          <div className="item">
-            <h1 className="item-medium">HI, I'M JUNG JIN WOO</h1>
-            <h2 className="item-small">HI, I'M JUNG JIN WOO</h2>
-          </div>
-        </div>
-        <div className="header-right col">
-          <div className="play-wrapper">
-            <div className="play-btn"></div>
+        <h1>HI, I'M JUNG JIN WOO</h1>
+        <h2>HI, I'M JUNG JIN WOO</h2>
+        <div className=" col">
+          <div className="play_wrapper">
+            <div className="play_btn"></div>
           </div>
           <div className="pattern">✦ ✦ ✦</div>
         </div>
       </div>
-      <div className="divider-container">
-        <div className="divider col">
-          <div className="hr"></div>
-        </div>
-      </div>
-      <div className="hero">
+      <div className="main">
         <Image src={mainImg} alt="메인 이미지" />
-        <div className="hero-wrapper"></div>
+        <div className="main_wrapper"></div>
       </div>
       <div className="marquee">
         <span>

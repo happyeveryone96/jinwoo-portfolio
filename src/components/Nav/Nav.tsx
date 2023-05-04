@@ -1,24 +1,15 @@
 import Link from "next/link";
 import React from "react";
-import gsap from "gsap";
 
 const Nav = () => {
-  React.useEffect(() => {
-    gsap.from(".nav", 1, {
-      width: "0%",
-      ease: "power0.inOut",
-      delay: 0,
-    });
-  }, []);
-
   const logoRef = React.useRef<HTMLDivElement>(null);
 
   return (
     <div className="nav">
-      <div ref={logoRef} className="nav-logo">
+      <div ref={logoRef} className="nav_logo">
         <Link href="/">HOME</Link>
       </div>
-      <div className="nav-links">
+      <div className="nav_links">
         <Link href="/projects">Projects</Link>
         <Link href="/contact">Contact</Link>
       </div>

@@ -1,0 +1,58 @@
+.project_main_container {
+  margin: 60px auto 30px;
+  width: 100%;
+}
+
+.first_container {
+  margin-top: 130px;
+}
+
+.project_main_container:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+
+.project_main_container:last-child {
+  padding-bottom: 30px;
+}
+
+.project_container {
+  position: relative;
+  z-index: 10000;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.project_sub_container > * {
+  position: relative;
+  text-align: left;
+}
+
+.project_sub_container {
+  width: 52%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.github {
+  margin-top: 12px;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .project_main_container {
+    width: 100%;
+  }
+
+  .project_sub_container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+  .first_container {
+    margin-top: 80px;
+  }
+}
