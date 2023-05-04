@@ -27,10 +27,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0 1em;
-  font-weight: 300;
-}
-
-.nav_logo a:nth-child(1) {
   font-weight: 700;
 }
 
@@ -163,37 +159,6 @@ h1 {
 p {
   margin: 1em 0 0 0;
   font-size: 1.8vw;
-}
-
-button {
-  position: relative;
-  padding: 0;
-  background: none;
-  border: none;
-  outline: none;
-  font-family: "Formula Condensed";
-  font-size: 4rem;
-  text-transform: uppercase;
-  display: block;
-  line-height: inherit;
-  cursor: pointer;
-}
-
-button::after {
-  position: absolute;
-  content: "";
-  display: block;
-  top: 100%;
-  left: 0;
-  transform: translate(0, -50%);
-  width: 0;
-  height: 3px;
-  background: #000;
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-button:hover::after {
-  width: 100%;
 }
 
 @media (max-width: 1000px) {

@@ -42,14 +42,12 @@ const Container = styled.div`
   bottom: 10px;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 40px;
 `;
 
 const StyledSlider = styled(Slider)`
   .slick-list {
     width: 40vw;
-    margin: 50px auto;
-    position: relative;
     @media screen and (max-width: 1000px) {
       width: 60vw;
     }
@@ -65,11 +63,12 @@ const CardBox = styled.div`
 `;
 
 const CardImg = styled.img`
+  object-fit: contain;
   width: 40vw;
-  height: 40vw;
+  height: 20vw;
   @media screen and (max-width: 1000px) {
     width: 60vw;
-    height: 60vw;
+    height: 40vw;
   }
 `;
 

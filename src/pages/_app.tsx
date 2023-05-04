@@ -3,6 +3,8 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import localFont from "next/font/local";
 import Nav from "@/components/Nav/Nav";
+import { hotjar } from "react-hotjar";
+import React, { useEffect } from "react";
 
 const monumentExtended = localFont({
   src: [
@@ -23,8 +25,13 @@ const monumentExtended = localFont({
     },
   ],
 });
-
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    if (process.env.NODE_ENV === "production") {
+      hotjar.initialize(3475452, 6);
+    }
+  }, []);
+
   return (
     <div className={monumentExtended.className}>
       <Head>

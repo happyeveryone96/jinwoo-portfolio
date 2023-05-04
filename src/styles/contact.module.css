@@ -17,7 +17,6 @@
 }
 
 .copy_wrapper h1 {
-  font-family: "Morgenwalsh";
   text-transform: none;
   font-size: 3rem;
   line-height: 1;
@@ -27,12 +26,6 @@
 .copy_wrapper h2 {
   line-height: 1;
   padding: 0 0 1em 0;
-}
-
-.copy_wrapper p {
-  font-family: "Neue Montreal";
-  width: 75%;
-  line-height: 1.5;
 }
 
 .overlay {
@@ -91,5 +84,17 @@
 
   .copy_wrapper h2 {
     font-size: 4vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .copy_wrapper h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact_container {
+    margin-top: 100px;
   }
 }
