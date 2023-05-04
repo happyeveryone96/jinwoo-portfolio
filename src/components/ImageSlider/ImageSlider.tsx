@@ -48,8 +48,6 @@ const Container = styled.div`
 const StyledSlider = styled(Slider)`
   .slick-list {
     width: 40vw;
-    margin: 50px auto;
-    position: relative;
     @media screen and (max-width: 1000px) {
       width: 60vw;
     }
@@ -65,6 +63,7 @@ const CardBox = styled.div`
 `;
 
 const CardImg = styled.img`
+  object-fit: contain;
   width: 40vw;
   height: 40vw;
   @media screen and (max-width: 1000px) {
