@@ -19,7 +19,7 @@ export default function Home() {
       ease: "power4.out",
       delay: 3.5,
     });
-    gsap.from(".nickname", 2, {
+    gsap.from(".slogan", 2, {
       x: 50,
       opacity: 0,
       ease: "power4.out",
