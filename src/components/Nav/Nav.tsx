@@ -6,12 +6,13 @@ const Nav = () => {
 
   return (
     <div className="nav">
-      <div ref={logoRef} className="nav_logo">
-        <Link href="/">HOME</Link>
-      </div>
-      <div className="nav_links">
-        <Link href="/projects">Projects</Link>
-        <Link href="/contact">Contact</Link>
+      <div className="nav_wrap">
+        <div ref={logoRef} className="nav_logo">
+          <Link href="/">jinwoo.co</Link>
+        </div>
+        <div className="nav_links">
+          <Link href="/projects">Projects</Link>
+        </div>
       </div>
     </div>
   );
