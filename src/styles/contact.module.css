@@ -1,8 +1,8 @@
 .contact_container {
   display: flex;
-  justify-content: center;
   overflow: hidden;
-  margin-top: 150px;
+  margin-top: 100px;
+  margin-left: 1vw;
 }
 
 .copy {
@@ -16,29 +16,51 @@
   width: 90%;
 }
 
+.link_wrapper {
+  display: flex;
+}
+
+.link_wrapper h2 {
+  margin-right: 30px;
+}
+
+.link_wrapper a {
+  text-decoration: none;
+}
+
+.link_wrapper a:hover {
+  text-decoration: underline;
+  color: pink;
+}
+
 .copy_wrapper h1 {
-  text-transform: none;
+  /* text-transform: none;
   font-size: 3rem;
   line-height: 1;
-  padding: 0 0 1em 0;
+  padding: 0 0 1em 0; */
 }
 
 .copy_wrapper h2 {
   line-height: 1;
+  font-size: 18px;
   padding: 0 0 1em 0;
 }
 
+.intro {
+  margin: 2vw 10vw;
+  font-size: 24px;
+}
+
 .overlay {
-  width: 50vw;
-  background: #000;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
 .overlay_copy {
-  width: 75%;
+  width: 80%;
 }
 
 .form {
@@ -72,6 +94,10 @@
 }
 
 @media (max-width: 1000px) {
+  .contact_container {
+    margin-left: 0;
+  }
+
   .copy_wrapper {
     width: 100%;
   }
@@ -81,15 +107,17 @@
     text-align: center;
     padding: 6em 0;
   }
-
-  .copy_wrapper h2 {
-    font-size: 4vw;
+  .intro {
+    margin: 10vw;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .copy_wrapper h1 {
     font-size: 2rem;
+  }
+  .copy_wrapper h2 {
+    font-size: 4vw;
   }
 }
 

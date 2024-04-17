@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import gsap, { Power4 } from "gsap";
-import Image from "next/image";
-import mainImg from "../../public/images/universe.jpg";
+import Contact from "../components/Contact/Contact";
 
 export default function Home() {
   React.useEffect(() => {
@@ -14,71 +13,37 @@ export default function Home() {
       duration: 1,
       stagger: 0.3,
     });
+    gsap.from(".contact", 2, {
+      x: 50,
+      opacity: 0,
+      ease: "power4.out",
+      delay: 3.5,
+    });
+    gsap.from(".nickname", 2, {
+      x: 50,
+      opacity: 0,
+      ease: "power4.out",
+      delay: 1.5,
+    });
     gsap.from("h1", 2, {
       y: 50,
       opacity: 0,
       ease: "power4.inOut",
-      delay: 1.5,
-      stagger: {
-        amount: 0.3,
-      },
-    });
-    gsap.from("h2", 2, {
-      y: 50,
-      opacity: 0,
-      ease: "power4.inOut",
-      delay: 1.5,
-      stagger: {
-        amount: 0.3,
-      },
-    });
-    gsap.from(".play_wrapper, .pattern", 2, {
-      scaleY: 0,
-      ease: "power3.inOut",
-      stagger: {
-        amount: 0.3,
-      },
-      delay: 2.5,
-    });
-    gsap.from(".play_btn", 2, {
-      scale: 0,
-      ease: "power3.inOut",
-      delay: 3,
-    });
-    gsap.from(".main_wrapper", 2, {
-      width: "100%",
-      ease: "power3.inOut",
-      delay: 3,
-    });
-    gsap.from(".marquee", 1, {
-      bottom: "-10rem",
-      ease: "power3.inOut",
-      delay: 4,
+      delay: 2,
     });
   }, []);
 
   return (
     <div className="container">
-      <div className="header">
-        <h1>HI, I'M JUNG JIN WOO</h1>
-        <h2>HI, I'M JUNG JIN WOO</h2>
-        <div className=" col">
-          <div className="play_wrapper">
-            <div className="play_btn"></div>
+      <div>
+        <div className="header">
+          <div className="slogan">
+            Be <span className="happy">happy</span>, everyone!
           </div>
-          <div className="pattern">✦ ✦ ✦</div>
+          <h1>JUNG JINWOO</h1>
         </div>
       </div>
-      <div className="main">
-        <Image src={mainImg} alt="메인 이미지" />
-        <div className="main_wrapper"></div>
-      </div>
-      <div className="marquee">
-        <span>
-          JavaScript - TypeScript - HTML - CSS - SCSS - Styled-Components -
-          React.js - Redux.js - Recoil.js
-        </span>
-      </div>
+      <Contact />
     </div>
   );
 }
