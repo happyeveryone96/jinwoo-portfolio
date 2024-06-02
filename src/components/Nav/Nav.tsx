@@ -8,7 +8,7 @@ const Nav = () => {
     <div className="nav">
       <div className="nav_wrap">
         <div ref={logoRef} className="nav_logo">
-          <Link href="/">jinwoo.co</Link>
+          <Link href="/">Home</Link>
         </div>
         <div className="nav_links">
           <Link href="/projects">Projects</Link>
