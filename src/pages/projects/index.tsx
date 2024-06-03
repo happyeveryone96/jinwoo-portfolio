@@ -1,22 +1,13 @@
 import React from "react";
-import Dream from "@/components/Dream/Dream";
-import Rush from "@/components/Rush/Rush";
-import Discatch from "@/components/Discatch/Discatch";
-import Uzik from "@/components/Uzik/Uzik";
-import LeanonCompany from "@/components/LeanonCompany/LeanonCompany";
-import EOStudio from "@/components/EOStudio/EOStudio";
-import Dataus from "@/components/Dataus/Dataus";
+import Project from "@/components/Project/Project";
+import { projectsData } from "@/data/projectsData";
 
 const Projects = () => {
   return (
     <>
-      <Dataus />
-      <EOStudio />
-      <LeanonCompany />
-      <Dream />
-      <Rush />
-      <Discatch />
-      <Uzik />
+      {projectsData.map((project, index) => (
+        <Project key={index} {...project} />
+      ))}
     </>
   );
 };
