@@ -21,7 +21,7 @@ const Contact = () => {
           <div className={css.copy_wrapper}>
             <h2>FRONT-END DEVELOPER</h2>
             <h2>Email. happyeveryone@naver.com</h2>
-            <h2>Address. 경기도 화성시 산척동</h2>
+            <h2>Address. 경기도 화성시 영천동</h2>
             <h2>Birth. 1996.03.30</h2>
             <div className={css.link_wrapper}>
               <h2>
